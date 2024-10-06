@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #eca72c;
+    --secondary-color: #3d5a80;
+    --accent1-color: #c0e8e0;
+    --accent2-color: #657153;
+    --heading-font: 'fjalla one';
+    --text-font: 'Roboto', sans-serif;
+}
+
+    h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+}
