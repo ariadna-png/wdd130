@@ -42,7 +42,7 @@ a:hover {
 }
 
 .hero img {
-    display: block;
+    
     width: 100%;
     height: auto;
 }
@@ -50,24 +50,27 @@ a:hover {
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 0;
+    right: 0;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
+    text-align: center;
+
 }
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    top: 6rem;
+    left: 0;
+    right: 0;
     background-color: rgba(194, 187, 187, 0.8);
     padding: 10px;
 }
 
 .hero article img {
     float: right;
-    margin-left: 10px;
-}
+width: 200px;}
 
 header {
     display: grid;
@@ -81,10 +84,14 @@ header img {
     width: 100px;
 }
 
-header nav {
+nav {
     display: flex;
-    justify-content: space-around;
-    padding: 0 20px;
+    justify-content: center;
+    align-items: center;;
+    
+}
+nav a {
+    padding: 1rem;
 }
 
 section {
