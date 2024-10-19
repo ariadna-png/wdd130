@@ -66,6 +66,7 @@ a:hover {
     right: 0;
     background-color: rgba(194, 187, 187, 0.8);
     padding: 10px;
+    width: 80%;
 }
 
 .hero article img {
