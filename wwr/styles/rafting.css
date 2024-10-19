@@ -49,19 +49,21 @@ a:hover {
 
 .hero h1 {
     position: absolute;
-    top: 20px;
+    top: 1rem;
     left: 0;
     right: 0;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
 
 }
 
 .hero article {
     position: absolute;
-    top: 5rem;
+    top: 7rem;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
