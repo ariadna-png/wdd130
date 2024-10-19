@@ -75,7 +75,7 @@ width: 200px;}
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 130px auto;
     align-items: center;
     padding: 20px;
     background-color: var(--accent1-color);
