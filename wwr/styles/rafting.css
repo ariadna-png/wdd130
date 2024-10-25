@@ -99,6 +99,20 @@ nav a {
     padding: 1rem;
 }
 
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #eca72c;
+}
+
 section {
     margin: 20px 0;
     padding: 20px;
@@ -142,3 +156,153 @@ footer nav {
 footer img {
     width: 30px;
 }
+
+.cta {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-button {
+    background-color: var(--accent1-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.cta h2 {
+    color: #ffffff; 
+    text-align: center; 
+    margin-top: 10px; 
+
+.trips-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.trip img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.trip-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.trip-summary th, .trip-summary td {
+    padding: 10px;
+    border-bottom: 1px solid var(--accent1-color);
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 130px auto;
+    align-items: center;
+    padding: 20px;
+    background-color: #3d5a80; /* Ajustar el color del fondo del encabezado */
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 1rem;
+    color: #ffffff; /* Cambiar el color de los enlaces a blanco */
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30%; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cambiar el color del texto a blanco */
+    font-size: 3rem; /* Tamaño del texto del héroe */
+    text-align: center;
+}
+
+.newsletter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.newsletter form {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin: 5px;
+}
+
+.call-to-action {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #eca72c; /* Color del botón */
+    color: #ffffff; /* Color del texto en el botón */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f0f0f0; 
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3d5a80; 
+}
+
+footer nav {
+    display: flex;
+    gap: 10px;
+} 
