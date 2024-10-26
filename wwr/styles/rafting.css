@@ -38,27 +38,59 @@ a:hover {
     color: var(--accent1-color);
 }
 
+/* Hero Section */
 .hero {
     position: relative;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
+/* Main Title */
 .hero h1 {
     position: absolute;
-    top: 1rem;
-    left: 0;
-    right: 0;
-    color: var(--secondary-color);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    top: 20px;
+    width: 100%;
     text-align: center;
-    width: 80%;
-    margin: 0 auto;
+    font-size: 2.5rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
 }
+
+/* Subtitle Box with Image */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.361);
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+/* Small Image Inside the Subtitle Box */
+.hero article img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+/* Subtitle Text */
+.hero article p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
 
 header {
     display: grid;
@@ -98,6 +130,36 @@ section {
     background-color: var(--accent2-color);
     color: #ffffffee;
     border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.adventure-item {
+    display: inline-block;
+    width: 16%; /* Reducido para que quepan más tarjetas en una fila */
+    margin: 8px; /* Reducido el margen */
+    padding: 10px; /* Reducido el padding */
+    background-color: #FFA500;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.adventure-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.adventure-item figcaption {
+    font-size: 1em; /* Tamaño de fuente reducido */
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .grid-container {
@@ -178,3 +240,172 @@ footer nav {
 footer img {
     width: 30px;
 }
+
+.trips-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #657153; /* Color de fondo similar al de la sección "Why Choose Us" */
+}
+
+.trip {
+    background-color: #ff8c00; /* Color de fondo naranja */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+}
+
+.trip img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.trip h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.trip p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.trip-summary {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #000000; /* Bordes alrededor de la sección */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #657153; /* Fondo suave */
+}
+
+.trip-summary h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px;
+}
+
+.trip-summary table {
+    width: 100%; /* Usar todo el ancho */
+    border-collapse: collapse; /* Eliminar espacios entre bordes */
+}
+
+.trip-summary th, .trip-summary td {
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    border-bottom: 1px solid #fff; /* Línea divisoria entre filas */
+}
+
+.trip-summary tr:hover {
+    background-color: #eca72c; /* Cambiar color al pasar el mouse */
+}
+
+
+.team-list {
+    display: flex;
+    justify-content: space-around; /* Espacio entre los elementos */
+    flex-wrap: nowrap; /* Mantener todos los elementos en una sola fila */
+    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+    padding: 20px; /* Espacio alrededor de la sección */
+    background-color: #657153; /* Color de fondo */
+}
+
+.team-member {
+    background-color: #ff8c00; /* Color de fondo naranja */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 300px; /* Ancho fijo para los elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    text-align: center; /* Centrar texto */
+    color: #fff; /* Color del texto */
+}
+
+.team-member img {
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    max-width: 100%; /* Ancho máximo para que no exceda el contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.team-member h2 {
+    font-size: 1.5em; /* Tamaño de fuente para el nombre */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.team-member figcaption {
+    font-size: 1em; /* Tamaño de fuente para la descripción */
+    margin-bottom: 10px; /* Espaciado inferior */
+    line-height: 1.5; /* Interlineado */
+}
+
+form {
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centrar el formulario horizontalmente */
+    padding: 10px; /* Espaciado interno */
+}
+
+label {
+    display: block; /* Cada etiqueta ocupa una línea completa */
+    margin-bottom: 5px; /* Espaciado inferior */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ancho completo para campos de entrada */
+    padding: 5px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Bordes suaves */
+}
+
+button {
+    background-color: #ff8c00; /* Color de fondo naranja para el botón */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin bordes */
+    padding: 5px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    width: 100%; /* Ancho completo para el botón */
+}
+
+button:hover {
+    background-color: #e07b00; /* Color más oscuro al pasar el mouse */
+}
+
+
+/* Estilo para la sección de historia */
+.history {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5em;
+    padding: 2em 5%;
+}
+
+
+.history h2 {
+    font-size: 1.8rem;
+    color: #eca72c;
+    flex-basis: 100%;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.history img {
+    width: 45%;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px #fff;
+}
+
+.history p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+
+
+   
