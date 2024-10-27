@@ -250,38 +250,38 @@ footer img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    background-color: #657153; /* Color de fondo similar al de la sección "Why Choose Us" */
+    gap: 15px; /* Reduce el espacio entre las tarjetas */
+    padding: 15px; /* Reduce el espacio de relleno de la sección */
 }
 
 .trip {
     background-color: #ff8c00; /* Color de fondo naranja */
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Reduce el espacio interior */
+    width: 200px; /* Ancho reducido para un tamaño más pequeño */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra más ligera */
     text-align: center;
     color: #fff;
 }
 
 .trip img {
-    border-radius: 10px;
+    border-radius: 8px;
     max-width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduce el espacio debajo de la imagen */
 }
 
 .trip h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.2em; /* Tamaño de fuente reducido */
+    margin-bottom: 8px; /* Espacio inferior reducido */
 }
 
 .trip p {
-    font-size: 1em;
-    margin-bottom: 10px;
-    line-height: 1.5;
+    font-size: 0.9em; /* Tamaño de fuente reducido */
+    margin-bottom: 8px;
+    line-height: 1.4; /* Espaciado de línea ligeramente ajustado */
 }
+
 
 .trip-summary {
     margin: 20px;
